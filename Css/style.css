@@ -1,0 +1,260 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Roboto:wght@300;400&family=Ubuntu&display=swap");
+
+:root {
+	--Playfair:"Playfair Display",serif;
+	--Quicksand:"Quicksand",sans-serif;
+	--Roboto:"Roboto",sans-serif;
+	--dark: #3c393d;
+	--orange:#ffa500;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+font-family: "Nunito",sans-serif;
+}
+body {
+	line-height: 1.4;
+	background-color: paleturquoise
+}
+img{
+	width: 100%;
+	display: block;
+}
+.container{
+	max-width: 1320px;
+	margin: 0 auto;
+	padding: 0 1.2rem;
+}
+header{
+	min-height: 18vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: stretch;
+}
+
+/* Navbar */
+.navbar {
+	background-color:rgba(0, 0, 0, 0.8);
+	padding: 1.5rem;
+	position:relative;
+	width: 97%;
+	display: flex;
+
+}
+	.navbar-band{
+		color:var(--orange);
+		font-size: 2rem;
+		display: block;
+		text-align: center;
+		text-decoration: none;
+		font-family: var(--Playfair);
+		letter-spacing: 1px;
+
+}
+.navbar-nav{
+	display: flex;
+	padding: 0.8rem 0 0.2rem 0;
+	text-align: center;
+
+}
+
+.navbar-nav a {
+	font-family: var(--Roboto);
+	letter-spacing: 1px;
+	font-weight: 510;
+	color: var(--orange);
+	text-decoration: none;
+	display: inline-block;
+	padding: 3px 22px;
+	border-radius: 20px;
+	letter-spacing: 3px;
+	transition: opacity 0.5s ease;
+}
+.navbar-nav a:hover{
+	color: white;
+	background-color: var(--orange);
+	opacity: 0.7;
+}
+.navbar-nav a:active{
+	color: white;
+	background-color: var(--orange);
+	opacity: 0.7
+
+}
+
+.crousel {
+	display: flex;
+	justify-content: center;
+	/* margin-top: 50px;*/
+	position: relative;
+}
+.crousel img {
+	width: 50rem;
+	/* border: 1px solid grey; */
+	border-radius: 15px;
+}
+.title-wrapper {
+	text-align: center;
+	padding-top: 5rem;
+}
+.title {
+	font-size: 2rem;
+	color: var(--dark);
+	position: left;
+	display: inline-block;
+	margin: auto;
+	margin-bottom: 2rem;
+}
+.title::before {
+	content: " ";
+	position: left;
+	height: 3px;
+	background: var(--dark);
+	width: 100%;
+	left: 0;
+	bottom: 0;
+}
+.title::after {
+	content: " ";
+	position: left;
+	height: 3px;
+	background: var(--dark);
+	width: 70%;
+	left: 0;
+	bottom: -10px;
+	transform: translateX(20%);
+}
+.blog {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	padding: 0 70px;
+}
+
+.blog a {
+	width: 100%;
+	background-color: white;
+	margin: 1rem;
+	margin-bottom: 3rem;
+	box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+	display: flex;
+	align-items: flex-start;
+	color: black;
+	text-decoration: none;
+}
+
+.blog a img {
+	width: 36%;
+	/* max-height: 300px; */
+	margin: 1rem;
+	border-radius: 4px;
+}
+
+.nav-bg {
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: -1;
+	opacity: 0.2;
+	width: 100%;
+}
+
+footer {
+	background: rgb(216, 216, 216);
+	border-radius: 70% 70% 0 0;
+	padding-top: 1rem;
+	margin-top: 2rem;
+}
+footer ul {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	list-style: none;
+}
+footer li {
+	margin: 12px 10px;
+}
+footer ul:first-child {
+	font-size: 1.3rem;
+}
+footer ul:last-child {
+	font-size: 1.4rem;
+}
+
+h2.blog-heading {
+	font-size: 2rem;
+	margin: 30px 0;
+	padding: 1rem;
+	margin-top: 6rem;
+}
+
+#top {
+	position: fixed;
+	font-size: 3rem;
+	bottom: 10px;
+	right: 10px;
+}
+
+.page-img img {
+	width: 100%;
+}
+.active {
+	text-decoration: underline;
+}
+
+/* Contact us */
+
+.contact {
+	width: max-content;
+	margin: 3rem auto;
+	padding: 1rem;
+	background-color:gray;
+	border-radius: 15px;
+ }
+
+.contact label,
+.contact input,
+.contact textarea {
+	display: block;
+	width: 35vw;
+	font-size: 1.3rem;
+	margin-top: 1rem;
+	outline: none;
+}
+.contact input {
+	border: none;
+	border-bottom: 1px solid green;
+}
+.contact textarea {
+	resize: none;
+	margin: 1rem 0;
+	height: 130px;
+	padding: 4px;
+	border-radius: 4px;
+}
+.contact .btn-wrapper {
+	text-align: center;
+	
+}
+.contact button {
+	font-size: 1.1rem;
+	background-color: green;
+	border: none;
+	border-radius: 15px;
+	padding: 5px 8px;
+}
+.about-main {
+	margin: 0 70px;
+
+}
+.about-heading {
+	font-size: 3rem;
+	margin: 40px 0;
+	color: gray;
+}
+
+.about-txt {
+	line-height: 2rem;
+	font-size: 1.6rem;
+}
